@@ -11,9 +11,16 @@ function loadXMLDoc() {
 
 function display(xml) {
 	var xmlDoc = xml.responseXML;
-	var gabinety = Array.from( xmlDoc.getElementsByTagName("numerGabinetu"));
+	
+	
+	var gabinety = Array.from( xmlDoc.getElementsByTagName("gabinet"));
 	for(var i=0; i<gabinety.length;i++){
-		console.log(gabinety[i].innerHTML);
+		console.log(gabinety[i]);
+	}
+	
+	var gabinety2 = Array.from( xmlDoc.getElementsByTagName("numerGabinetu"));
+	for(var i=0; i<gabinety2.length;i++){
+		console.log(gabinety2[i].innerHTML);
 	}
 }	
 loadXMLDoc();
