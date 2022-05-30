@@ -11,10 +11,7 @@ function loadXMLDoc() {
 
 function display(xml) {
 	var xmlDoc = xml.responseXML;
-	var ludzie = Array.from( xmlDoc.getElementsByTagName("osoba"));
-	ludzie = ludzie.filter( p => (p.querySelector("miasto").innerHTML == "Bydgoszcz"));
-	let table = document.querySelector("table");
-	displayTable(table, ludzie);
+	var gabinety = Array.from( xmlDoc.getElementsByTagName("numerGabinetu"));
 }	
 
 
