@@ -13,9 +13,7 @@ function display(xml) {
 	var xmlDoc = xml.responseXML;
 	var gabinety = Array.from( xmlDoc.getElementsByTagName("numerGabinetu"));
 	for(var i=0; i<gabinety.length;i++){
-		console.log(gabinety[i]);
+		console.log(gabinety[i].innerHTML);
 	}
 }	
-
-
 loadXMLDoc();
