@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="przychodnia.css"?>
+
+        
+
+<przychodnia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="przychodniaSchema.xsd">
+    <gabinet>
+        <numerGabinetu>164</numerGabinetu>
+        <rejestratorka>
+            <czlowiek>
+                <imie>Weronika</imie>
+                <nazwisko>Czerwinska </nazwisko>
+            </czlowiek>
+        </rejestratorka>
+        <lekarze>
+            <lekarz>
+                <idLekarza>69</idLekarza>
+                <czlowiek>
+                    <imie>Angelika</imie>
+                    <nazwisko>Czerwinska</nazwisko>
+                </czlowiek>
+                <specjalizacja>Okulista </specjalizacja>
+            </lekarz>
+            <lekarz>
+                <idLekarza>420</idLekarza>
+                <czlowiek>
+                    <imie>Bartosz</imie>
+                    <nazwisko>Walczak</nazwisko>
+                </czlowiek>
+                <specjalizacja>Kardiolog </specjalizacja>
+            </lekarz>
+            <lekarz>
+                <idLekarza>2137</idLekarza>
+                <czlowiek>
+                    <imie>Grażyna</imie>
+                    <nazwisko>Rutkowska</nazwisko>
+                </czlowiek>
+
+                <specjalizacja>Endokrynolog </specjalizacja>
+            </lekarz>
+        </lekarze>
+    </gabinet>
+    <gabinet>
+        <numerGabinetu>214</numerGabinetu>
+        <rejestratorka>
+            <czlowiek>
+                <imie>Julianna</imie>
+                <nazwisko>Jaworska </nazwisko>
+            </czlowiek>
+        </rejestratorka>
+        <lekarze>
+            <lekarz>
+                <idLekarza>41</idLekarza>
+                <czlowiek>
+                    <imie>Janusz</imie>
+                    <nazwisko>Szczepański</nazwisko>
+                </czlowiek>
+                <specjalizacja>Ortopeda </specjalizacja>
+            </lekarz>
+            <lekarz>
+                <idLekarza>47</idLekarza>
+                <czlowiek>
+                    <imie>Klaudiusz</imie>
+                    <nazwisko>Nowicki</nazwisko>
+                </czlowiek>
+                <specjalizacja>Laryngolog </specjalizacja>
+            </lekarz>
+            <lekarz>
+                <idLekarza>36</idLekarza>
+                <czlowiek>
+                    <imie>Aniela</imie>
+                    <nazwisko>Jaworska</nazwisko>
+                </czlowiek>
+                <specjalizacja>Chirurg dziecięcy </specjalizacja>
+            </lekarz>
+        </lekarze>
+    </gabinet>
+</przychodnia>
