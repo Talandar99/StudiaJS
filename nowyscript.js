@@ -15,12 +15,14 @@ function display(xml) {
 	
 	var gabinety = Array.from( xmlDoc.getElementsByTagName("gabinet"));
 	for(var i=0; i<gabinety.length;i++){
-		console.log(gabinety[i]);
+		g=gabinety[i];
+		console.log(g.children[0].innerHTML);
+		//console.log(gabinety[i]);
 	}
 	
 	var gabinety2 = Array.from( xmlDoc.getElementsByTagName("numerGabinetu"));
 	for(var i=0; i<gabinety2.length;i++){
-		console.log(gabinety2[i].innerHTML);
+		//console.log(gabinety2[i].innerHTML);
 	}
 }	
 loadXMLDoc();
