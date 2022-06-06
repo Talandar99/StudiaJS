@@ -19,4 +19,3 @@ function display(xml) {
 	}
 }	
 loadXMLDoc();
-//tzo to znowu oni
