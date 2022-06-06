@@ -1,5 +1,3 @@
-var XMLHttpRequest = require('xhr2');
-var xmlhttp = new XMLHttpRequest
 function loadXMLDoc() {
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.onreadystatechange = function() {
