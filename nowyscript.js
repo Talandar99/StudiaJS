@@ -13,7 +13,7 @@ function display(xml) {
 	var xmlDoc = xml.responseXML;
 	var gabinety = Array.from( xmlDoc.getElementsByTagName("gabinet"));
 	for(var i=0; i<gabinety.length;i++){
-		console.log(gabinety[i].children[0].innerHTML);
+		console.log(gabinety[i].children[0]);
 		//console.log(gabinety[i].children[1].);
 		//console.log(gabinety[i].children[2].);
 	}
