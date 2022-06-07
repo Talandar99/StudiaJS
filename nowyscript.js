@@ -10,13 +10,12 @@ function loadXMLDoc(nazwadokumentu) {
 	xmlhttp.send();
 }
 
-function dig(parent, table) {
+function dig(parent, table, x, y) {
 	if (parent.childElementCount != null) {
 		if (parent.childElementCount == 0) {
 			table.insertRow();
 			document.getElementsByTagName('tr')[document.getElementsByTagName('tr').length - 1].insertCell().innerHTML = parent.localName+": ";
 			document.getElementsByTagName('tr')[document.getElementsByTagName('tr').length - 1].insertCell().innerHTML = parent.innerHTML;
-
 		} else {
 			table.insertRow().innerHTML = (parent.localName);
 			parent.childNodes.forEach(child => { dig(child, table) });
