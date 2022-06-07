@@ -8,20 +8,30 @@ function loadXMLDoc() {
 	xmlhttp.send();
 }
 
-function dig(parent) {
+function dig(parent, table) {
+
 	if (parent.childElementCount != null) {
 		if (parent.childElementCount == 0) {
-			console.log("[" + parent.localName + "]			" + parent.innerHTML);
+			document.getElementsByTagName('tr')[document.getElementsByTagName('tr').length - 1].insertCell().innerHTML = parent.innerHTML;
 		} else {
-			parent.childNodes.forEach(child => { dig(child) });
+			table.insertRow().innerHTML = (parent.localName);
+			document.getElementsByTagName('tr')[document.getElementsByTagName('tr').length - 1];
+			parent.childNodes.forEach(child => { dig(child, table) });
 		}
+	} else {
+		table.insertRow();
 	}
 }
 
 function display(xml) {
+	var startingPoint = "gabinet";
 	var xmlDoc = xml.responseXML;
-	document.getElementById('body').appendChild(table);
-	var mainArray = Array.from(xmlDoc.getElementsByTagName("gabinet"));
-	mainArray.forEach(element => { dig(element);});
+	var mainArray = Array.from(xmlDoc.getElementsByTagName(startingPoint));
+	document.getElementsByTagName('body')[0].appendChild(document.createElement('table'));
+	table = document.getElementsByTagName('table')[0];
+	table.setAttribute('border', '1');
+
+	mainArray.forEach(element => { dig(element, table); });
+
 }
 loadXMLDoc();
